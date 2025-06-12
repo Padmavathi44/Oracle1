@@ -39,11 +39,24 @@
         <button class="contact-btn">Contact</button>
       </div>
     </div>
+    <form id="contact-form">
+  <label for="full-name">Full Name:</label>
+  <input type="text" id="full-name" name="full-name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Submit</button>
+
+  </form>
   </main>
 
   
 
-  <script src="script.js"></script>
+  <script src="script.js">
   const form = document.getElementById('contact-form');
 
 // Add event listener to form submission
@@ -80,21 +93,5 @@ function validateEmail(email) {
  </script>   
 </body>
 <!-- Contact Form -->
-<form id="contact-form">
-  <label for="full-name">Full Name:</label>
-  <input type="text" id="full-name" name="full-name" required>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <button type="submit">Submit</button>
-
-
-
-
-
-</form>
 </html>
